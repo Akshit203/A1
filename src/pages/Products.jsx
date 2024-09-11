@@ -1,56 +1,129 @@
+import { useNavigate } from "react-router";
 import Layout from "../components/layout/Layout";
 
+const productData = [
+    {
+        id: 1,
+        image: '/src/images/9c023e01-cf93-49e4-9e96-d1fc4d341b8b1644483275914NayoWomenOffWhitePrinted1.jpg',
+        title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
+        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
+        price: 150,
+        trendingProductName: 'Featured',
+        quantity: 1,
+    },
+    {
+        id: 2,
+        image: '/src/images/6fc8e78a-e0e3-4eb6-94f3-53449f5a8afc1717496220339-Kook-N-Keech-Women-Tshirts-4791717496219965-1.jpg',
+        title: 'Cotton T-Shirt',
+        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
+        price: 120,
+        trendingProductName: 'Featured',
+        quantity: 1,
+    }, 
+    {
+        id: 3,
+        image : '/src/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.webp',
+        title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
+        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
+        price: 130,
+        trendingProductName: 'Featured',
+        quantity: 1,
+    },
+    {
+        id: 4,
+        image: '/src/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.webp',
+        title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
+        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
+        price: 120,
+        trendingProductName: 'Featured',
+        quantity: 1,
+    },
+    {
+        id: 1,
+        image: '/src/images/828f1c75-c4de-4bc8-900a-aab184ea7e151721704393013StyleQuotientWomenCropShrug1.webp',
+        title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
+        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
+        price: 150,
+        trendingProductName: 'Featured',
+        quantity: 1,
+    },
+    {
+        id: 2,
+        image: 'https://i.pinimg.com/736x/e4/61/f2/e461f2246b6ad93e2099d98780626396.jpg',
+        title: 'Kaushalam kalash Copper Pot',
+        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
+        price: 120,
+        trendingProductName: 'Featured',
+        quantity: 1,
+    },
+    {
+        id: 3,
+        image: '/src/images/1UzPz8vx_a3edc785c1c14b16a607db09f4a11f83.webp',
+        title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
+        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
+        price: 130,
+        trendingProductName: 'Featured',
+        quantity: 1,
+    },
+    {
+        id: 4,
+        image: 'https://i.pinimg.com/564x/22/80/8d/22808d88ada424962f2e064f3075b2d1.jpg',
+        title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
+        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
+        price: 120,
+        trendingProductName: 'Featured',
+        quantity: 1,
+    }
+]
+
 const Products = () => {
+    const navigate = useNavigate();
     return (
         <Layout>
-            <section className="py-5 lg:py-16 font-poppins dark:bg-gray-800">
-                <div className="max-w-6xl px-4 mx-auto">
-                    <div className="flex flex-wrap mb-24 -mx-4">
-                        <div className="w-full px-4 mb-8 md:w-1/2 md:mb-0">
-                            <div className="">
-                                <div className="">
-                                    <img
-                                        className=" w-full lg:h-[39em] rounded-lg"
-                                        src="https://i.pinimg.com/736x/e4/61/f2/e461f2246b6ad93e2099d98780626396.jpg"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-full px-4 md:w-1/2">
-                            <div className="lg:pl-20">
-                                <div className="mb-6 ">
-                                    <h2 className="max-w-xl mb-6 text-xl font-semibold leading-loose tracking-wide text-gray-700 md:text-2xl dark:text-gray-300">
-                                        Intel® Core™ i5-12600HX Processor (18M Cache, up to 4.60 GHz)
-                                    </h2>
+        <div className="py-4">
+            {/* Heading  */}
+            <div className="">
+                <h1 className=" text-center text-2xl font-semibold">All Products</h1>
+            </div>
 
-                                    <p className="inline-block text-2xl font-semibold text-gray-700 dark:text-gray-400 ">
-                                        <span>Rs.7,000.00</span>
-                                    </p>
-                                </div>
-                                <div className="mb-6">
-                                    <h2 className="mb-2 text-lg font-bold text-gray-700 dark:text-gray-400">
-                                        Description :
-                                    </h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, explicabo enim ratione voluptatum at cupiditate delectus nemo dolorum officia esse beatae optio ut mollitia sit omnis, possimus nesciunt voluptas natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum ad rem reprehenderit qui, omnis nam distinctio, dignissimos nisi quidem aliquam, sapiente delectus commodi! Perspiciatis provident illo autem quidem ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae reiciendis eum dolorum cupiditate </p>
-                                </div>
+            {/* main  */}
+            <section className="text-gray-600 body-font">
+                <div className="container px-5 lg:px-0  mx-auto">
+                    <div className="flex flex-wrap m-2">
+                        {productData.map((item, index) => {
+                            const { image, title, price } = item
+                            return (
+                                <div key={index} className="p-4 w-full md:w-1/4">
+                                    <div className="h-100 border border-gray-300 rounded-xl overflow-hidden shadow-md cursor-pointer">
+                                        <img
+                                            onClick={()=> navigate('/productinfo')}
+                                            className="lg:h-auto  h-96 w-full"
+                                            src={image}
+                                            alt="blog"
+                                        />
+                                        <div className="p-4">
 
-                                <div className="mb-6 " />
-                                <div className="flex flex-wrap items-center mb-6">
-                                   
-                                    <button
-                                        className="w-full px-4 py-3 text-center text-pink-600 bg-pink-100 border border-pink-600  hover:bg-pink-600 hover:text-gray-100 rounded-xl"
-                                    >
-                                        Add to cart
-                                    </button>
+                                            <h1 className="title-font text-lg font-medium text-gray-900 mb-1">
+                                                {title.substring(0, 25)}
+                                            </h1>
+                                            <h1 className="title-font text-lg font-medium text-gray-900 mb-2">
+                                                ₹{price}
+                                            </h1>
+
+                                            <div className="flex justify-center ">
+                                                <button className=" bg-black hover:bg-black w-full text-white py-[4px] rounded-lg font-bold">
+                                                    Add To Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-            
-                            </div>
-                        </div>
+                            )
+                        })}
                     </div>
                 </div>
             </section>
-
+        </div>
         </Layout>
     );
 }
