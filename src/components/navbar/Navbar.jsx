@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Search from '../search/Search';
+import SignUp from '../../pages/Registration/SignUp';
 import Products from '../../pages/Products';
 
 
@@ -19,11 +20,15 @@ const Navbar =()=> {
             </li>
             
             <li className="border border-white bg-white text-black rounded-sm px-3 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
-                <Link to={'/signup'}>Register</Link>
+                <Link to={'/SignUp'}>Register</Link>
             </li>
            
             <li className="border border-white bg-white text-black rounded-sm px-3 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
-                <Link to={'/'}>Log in</Link>
+                <Link to={'/Login'}>Log in</Link>
+            </li>
+
+            <li className="border border-white bg-white text-black rounded-sm px-3 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <Link to={'/UserDashBoard'}>Akshit</Link>
             </li>
 
             {/* Admin */}

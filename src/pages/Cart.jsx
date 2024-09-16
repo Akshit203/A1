@@ -114,8 +114,8 @@ const Cart = () => {
                                             </div>
                                             <div className="ml-6 flex text-sm">
                                                 <button type="button" className="flex items-center space-x-1 px-2 py-1 pl-0">
-                                                    <Trash size={12} className="text-red-500" />
-                                                    <span className="text-xs font-medium text-red-500">Remove</span>
+                                                    <Trash size={12} className="text-black" />
+                                                    <span className="text-xs font-medium text-black">Remove</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -160,7 +160,7 @@ const Cart = () => {
                                 <div className="px-2 pb-4 font-medium text-green-700">
                                 <div className="flex gap-4 mb-6">
                                     <button
-                                        className="w-full px-4 py-3 text-center text-gray-100 bg-pink-600 border border-transparent dark:border-gray-700 hover:border-pink-500 hover:text-pink-700 hover:bg-pink-100 rounded-xl"
+                                        className="w-full px-4 py-3 text-center text-gray-100 bg-black border border-transparent dark:border-gray-700 hover:border-pink-500 hover:text-pink-700 hover:bg-pink-100 rounded-xl"
                                     >
                                         Buy now
                                     </button>
