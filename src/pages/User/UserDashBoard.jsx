@@ -26,10 +26,7 @@ const UserDashBoard = () => {
                             <h1> User </h1>
                         </div>
 
-                        <div className="">
-                            <h1 className=" text-center text-lg"><span className=" font-bold">Name :</span> Kamal Nayan Upadhyay</h1>
-                            <h1 className=" text-center text-lg"><span className=" font-bold">Email :</span> test@gmail.com</h1>
-                        </div>
+
 
                     </div>
                 </div>
