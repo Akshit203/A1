@@ -20,7 +20,7 @@ const Navbar =()=> {
             </li>
             
             <li className="border border-white bg-white text-black rounded-sm px-3 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
-                <Link to={'/SignUp'}>Register</Link>
+                <Link to={'/Register'}>Register</Link>
             </li>
            
             <li className="border border-white bg-white text-black rounded-sm px-3 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
