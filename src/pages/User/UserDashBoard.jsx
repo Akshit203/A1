@@ -14,22 +14,53 @@ const products = [
 ]
 
 const UserDashBoard = () => {
+
+    const user = JSON.parse(localStorage.getItem('users'));
+
+
+
     return (
         <Layout>
             <div className=" container mx-auto px-4 py-5 lg:py-8">
                 
-                <div className="top ">
+                <div className="top">
+                    {/* Main */}
+                    <div className="bg-white-50 py-5 rounded-xl border border-white-400 flex justify-between">
+                        {/* Image */}
                     
-                    <div className=" bg-white py-5 rounded-xl border-4 border-black-800">
-                        
-                        <div className="flex justify-center">
-                            <h1> User </h1>
+                        {/* Table for User Info */}
+                        <div className="flex justify-center w-full">
+                            <table className="min-w-[50%] text-left border-collapse">
+                                <tbody>
+                                    {/* Name Row */}
+                                    <tr className="border-b-2">
+                                        <td className="px-6 py-4 font-bold">Name:</td>
+                                        <td className="px-6 py-4">{user?.name || 'N/A'}</td>
+                                    </tr>
+                
+                                    {/* Email Row */}
+                                    <tr className="border-b-2">
+                                        <td className="px-6 py-4 font-bold">Email:</td>
+                                        <td className="px-6 py-4">{user?.email || 'N/A'}</td>
+                                    </tr>
+                
+                                    {/* Date Row */}
+                                    <tr className="border-b-2">
+                                        <td className="px-6 py-4 font-bold">Date:</td>
+                                        <td className="px-6 py-4">{user?.date || 'N/A'}</td>
+                                    </tr>
+                
+                                    {/* Role Row */}
+                                    <tr className="border-b-2">
+                                        <td className="px-6 py-4 font-bold">Role:</td>
+                                        <td className="px-6 py-4">{user?.role || 'N/A'}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-
-
-
                     </div>
                 </div>
+
 
                 
                 <div className="bottom">
