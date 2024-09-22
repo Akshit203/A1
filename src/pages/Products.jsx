@@ -49,7 +49,7 @@ const productData = [
     },
     {
         id: 2,
-        image: 'https://i.pinimg.com/736x/e4/61/f2/e461f2246b6ad93e2099d98780626396.jpg',
+        image: '/public/images/1UzPz8vx_a3edc785c1c14b16a607db09f4a11f83.webp',
         title: 'Kaushalam kalash Copper Pot',
         desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
         price: 120,
@@ -67,7 +67,7 @@ const productData = [
     },
     {
         id: 4,
-        image: 'https://i.pinimg.com/564x/22/80/8d/22808d88ada424962f2e064f3075b2d1.jpg',
+        image: '/public/images/1UzPz8vx_a3edc785c1c14b16a607db09f4a11f83.webp',
         title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
         desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
         price: 120,
