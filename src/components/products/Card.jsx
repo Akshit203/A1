@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 let Data = [
     {
         id: 1,
-        image: '/src/images/9c023e01-cf93-49e4-9e96-d1fc4d341b8b1644483275914NayoWomenOffWhitePrinted1.jpg',
+        image: '/public/images/9c023e01-cf93-49e4-9e96-d1fc4d341b8b1644483275914NayoWomenOffWhitePrinted1.jpg',
         title: 'T-Shirt',
         price: 150,
         trendingProductName: 'Featured',
@@ -11,7 +11,7 @@ let Data = [
     },
     {
         id: 2,
-        image: '/src/images/6fc8e78a-e0e3-4eb6-94f3-53449f5a8afc1717496220339-Kook-N-Keech-Women-Tshirts-4791717496219965-1.jpg',
+        image: '/public/images/6fc8e78a-e0e3-4eb6-94f3-53449f5a8afc1717496220339-Kook-N-Keech-Women-Tshirts-4791717496219965-1.jpg',
         title: 'T-Shirt',
         price: 120,
         trendingProductName: 'Featured',
@@ -19,7 +19,7 @@ let Data = [
     },
     {
         id: 3,
-        image: '/src/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.webp',
+        image: '/public/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.webp',
         title: 'T-Shirt',
         price: 130,
         trendingProductName: 'Featured',
@@ -27,7 +27,7 @@ let Data = [
     },
     {
         id: 4,
-        image: '/src/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.webp',
+        image: '/public/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.webp',
         title: 'T-Shirt',
         price: 120,
         trendingProductName: 'Featured',
@@ -35,7 +35,7 @@ let Data = [
     },
     {
         id: 5,
-        image: '/src/images/9c023e01-cf93-49e4-9e96-d1fc4d341b8b1644483275914NayoWomenOffWhitePrinted1.jpg',
+        image: '/public/images/9c023e01-cf93-49e4-9e96-d1fc4d341b8b1644483275914NayoWomenOffWhitePrinted1.jpg',
         title: 'T-Shirt',
         price: 150,
         trendingProductName: 'Featured',
@@ -43,7 +43,7 @@ let Data = [
     },
     {
         id: 6,
-        image: '/src/images/6fc8e78a-e0e3-4eb6-94f3-53449f5a8afc1717496220339-Kook-N-Keech-Women-Tshirts-4791717496219965-1.jpg',
+        image: '/public/images/6fc8e78a-e0e3-4eb6-94f3-53449f5a8afc1717496220339-Kook-N-Keech-Women-Tshirts-4791717496219965-1.jpg',
         title: 'T-Shirt',
         price: 120,
         trendingProductName: 'Featured',
@@ -51,7 +51,7 @@ let Data = [
     },
     {
         id: 7,
-        image: '/src/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.webp',
+        image: '/public/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.webp',
         title: 'T-Shirt',
         price: 130,
         trendingProductName: 'Featured',
@@ -59,7 +59,7 @@ let Data = [
     },
     {
         id: 8,
-        image: '/src/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.webp',
+        image: '/public/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.webp',
         title: 'T-Shirt',
         price: 120,
         trendingProductName: 'Featured',
