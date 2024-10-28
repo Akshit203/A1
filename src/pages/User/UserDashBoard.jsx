@@ -24,56 +24,50 @@ const UserDashBoard = () => {
             <div className=" container mx-auto px-4 py-5 lg:py-8">
                 
                 <div className="top">
-                    {/* Main */}
+
                     <div className="bg-white-50 py-5 rounded-xl border border-white-400 flex justify-between">
-                        {/* Image */}
                     
-                        {/* Table for User Info */}
                         <div className="flex justify-center w-full">
                             <table className="min-w-[50%] text-left border-collapse">
                                 <tbody>
-                                    {/* Name Row */}
                                     <tr className="border-b-2">
                                         <td className="px-6 py-4 font-bold">Name:</td>
                                         <td className="px-6 py-4">{user?.name || 'N/A'}</td>
                                     </tr>
                 
-                                    {/* Email Row */}
                                     <tr className="border-b-2">
                                         <td className="px-6 py-4 font-bold">Email:</td>
                                         <td className="px-6 py-4">{user?.email || 'N/A'}</td>
                                     </tr>
                 
-                                    {/* Date Row */}
                                     <tr className="border-b-2">
                                         <td className="px-6 py-4 font-bold">Date:</td>
                                         <td className="px-6 py-4">{user?.date || 'N/A'}</td>
                                     </tr>
                 
-                                    {/* Role Row */}
                                     <tr className="border-b-2">
                                         <td className="px-6 py-4 font-bold">Role:</td>
                                         <td className="px-6 py-4">{user?.role || 'N/A'}</td>
                                     </tr>
+
                                 </tbody>
                             </table>
                         </div>
+
                     </div>
                 </div>
 
-
-                
                 <div className="bottom">
-                    {/* main 1 */}
+
                     <div className="mx-auto my-4 max-w-6xl px-2 md:my-6 md:px-0">
-                        {/* text  */}
+                        
                         <h2 className=" text-2xl lg:text-3xl font-bold">Order Details</h2>
 
-                        {/* main 2 */}
+                        
                         <div className="mt-5 flex flex-col overflow-hidden rounded-xl border border-black-100 md:flex-row">
-                            {/* main 3  */}
+                            
                             <div className="w-full border-r border-black-100 bg-black-50 md:max-w-xs">
-                                {/* left  */}
+                                
                                 <div className="p-8">
                                     <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-1">
                                         <div className="mb-4">
@@ -98,7 +92,7 @@ const UserDashBoard = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* right  */}
+                            
                             <div className="flex-1">
                                 <div className="p-8">
                                     <ul className="-my-7 divide-y divide-gray-200">
@@ -135,8 +129,10 @@ const UserDashBoard = () => {
 
                                 </div>
                             </div>
+
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </Layout>

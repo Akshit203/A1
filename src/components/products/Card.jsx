@@ -72,40 +72,56 @@ const Card = () => {
 
     return (
         <div className="m-8">
-            <div className="">
-                <h1 className="text-center text-base">BESTSELLING PRODUCTS</h1>
-            </div>
+           
 
             <section>
-                <div>
-                    <div className="flex flex-wrap m-4">
-                        {Data.map((item) => {
-                            const { id, image, title, price } = item;
+            <div className="py-4">
+
+            {/* Heading  */}
+
+            <div className="">
+                <h1 className=" text-center text-xl font-semibold">BESTSELLING PRODUCTS</h1>
+            </div>
+
+            {/* main  */}
+            
+            <section className="text-gray-600 body-font">
+                <div className="container px-5 lg:px-0  mx-auto">
+                    <div className="flex flex-wrap m-2">
+                        {Data.map((item, index) => {
+                            const { image, title, price } = item
                             return (
-                                <div key={id} className="p-4 md:w-1/4">
-                                    <div className="p-2 flex flex-wrap border-4 rounded-xl bg-white justify-center">
-                                        <img 
-                                            className="m-2 w-48 h-60 cursor-pointer" 
-                                            onClick={() => navigate('/Products')} 
-                                            src={image} 
-                                            alt={title} 
+                                <div key={index} className="p-4 w-full md:w-1/4">
+                                    <div className="h-100 border border-gray-300 rounded-xl overflow-hidden shadow-md cursor-pointer">
+                                        <img
+                                            onClick={()=> navigate('/productinfo')}
+                                            className="lg:h-auto  h-96 w-full"
+                                            src={image}
+                                            alt="blog"
                                         />
-                                        <div className="p-6">
-                                            
-                                            <h1>{title.substring(0, 25)}{title.length > 25 ? '...' : ''}</h1>
-                                            <h1>₹{price}</h1>
-                                            <div>
-                                                <button className="p-12 bg-black hover:bg-black w-full text-white py-[4px] rounded-lg font-bold">
+                                        <div className="p-4">
+
+                                            <h1 className="title-font text-lg font-medium text-gray-900 mb-1">
+                                                {title.substring(0, 25)}
+                                            </h1>
+                                            <h1 className="title-font text-lg font-medium text-gray-900 mb-2">
+                                                ₹{price}
+                                            </h1>
+
+                                            <div className="flex justify-center ">
+                                                <button className=" bg-black hover:bg-black w-full text-white py-[4px] rounded-lg font-bold">
                                                     Add To Cart
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            );
+                            )
                         })}
                     </div>
                 </div>
+            </section>
+        </div>
             </section>
         </div>
     );
