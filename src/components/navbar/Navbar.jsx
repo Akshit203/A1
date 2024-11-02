@@ -4,8 +4,11 @@ import Search from '../search/Search';
 import { useNavigate } from 'react-router-dom';
 import SignUp from '../../pages/Registration/SignUp';
 import Products from '../../pages/Products';
+import { useSelector } from "react-redux";
+
 
 const Navbar = () => {
+    
     const user = JSON.parse(localStorage.getItem('users'));
 
     // navigate 
@@ -46,7 +49,10 @@ const Navbar = () => {
                 </>
             )}
             <li className="border-b-2 bg-white text-black rounded-sm px-3 hover:border-blue-500 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
-                <Link to={'/cart'}> Cart</Link>
+                <Link to={'/cart'}>
+                    Cart({Products.length})
+                </Link>
+
             </li>
         </ul>
     );
