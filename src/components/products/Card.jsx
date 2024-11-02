@@ -109,7 +109,7 @@ const Card = () => {
                                         <div key={id} className="p-4 w-full md:w-1/4">
                                             <div className="h-100 border border-gray-300 rounded-xl overflow-hidden shadow-md cursor-pointer">
                                                 <img
-                                                    onClick={() => navigate(`/productinfo/${id}`)}
+                                                    onClick={() => navigate(`/product/${id}`)}
                                                     className="lg:h-auto h-96 w-full"
                                                     src={image}
                                                     alt={title}
