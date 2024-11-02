@@ -26,7 +26,7 @@ let Data = [
     },
     {
         id: 3,
-        image: '/public/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.webp',
+        image: '/public/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.jpg',
         title: 'T-Shirt',
         price: 130,
         trendingProductName: 'Featured',
@@ -34,7 +34,7 @@ let Data = [
     },
     {
         id: 4,
-        image: '/public/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.webp',
+        image: '/public/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.jpg',
         title: 'T-Shirt',
         price: 120,
         trendingProductName: 'Featured',
@@ -58,7 +58,7 @@ let Data = [
     },
     {
         id: 7,
-        image: '/public/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.webp',
+        image: '/public/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.jpg',
         title: 'T-Shirt',
         price: 130,
         trendingProductName: 'Featured',
@@ -66,7 +66,7 @@ let Data = [
     },
     {
         id: 8,
-        image: '/public/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.webp',
+        image: '/public/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.jpg',
         title: 'T-Shirt',
         price: 120,
         trendingProductName: 'Featured',
