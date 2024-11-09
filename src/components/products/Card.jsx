@@ -11,7 +11,7 @@ import { toast, Toaster } from 'react-hot-toast';
 let Data = [
     {
         id: 1,
-        image: '/src/static/images/image1.jpg',
+        image: '/public/images/image1.jpg',
         title: 'T-Shirt',
         price: 150,
         trendingProductName: 'Featured',
@@ -19,7 +19,7 @@ let Data = [
     },
     {
         id: 2,
-        image: '/src/static/images/image2.jpg',
+        image: '/public/images/image2.jpg',
         title: 'T-Shirt',
         price: 120,
         trendingProductName: 'Featured',
