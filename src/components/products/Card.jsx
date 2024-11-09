@@ -11,53 +11,53 @@ import { toast, Toaster } from 'react-hot-toast';
 let Data = [
     {
         id: 1,
-        image: 'https://i.pinimg.com/564x/3e/05/ce/3e05cefbc7eec79ac175ea8490a67939.jpg',
+        image: '/image1.jpg',
         title: 'T-Shirt',
         price: 150,
        
     },
     {
         id: 2,
-        image: 'https://i.pinimg.com/736x/e4/61/f2/e461f2246b6ad93e2099d98780626396.jpg',
+        image: '/image2.jpg',
         title: 'T-Shirt',
         price: 120,
       
     },
     {
         id: 3,
-        image: '/f2.jpg',
+        image: '/image3.jpg',
         title: 'T-Shirt',
         price: 130,
  
     },
     {
         id: 4,
-        image: '/public/images/image4.jpg',
+        image: '/image4.jpg',
         title: 'T-Shirt',
         price: 120,
 
     },
     {
         id: 5,
-        image: '/public/images/image5.jpg',
+        image: '/image5.jpg',
         title: 'T-Shirt',
         price: 150,
     },
     {
         id: 6,
-        image: '/public/images/image6.jpg',
+        image: '/image6.jpg',
         title: 'T-Shirt',
         price: 120,
     },
     {
         id: 7,
-        image: '/public/images/image1.jpg',
+        image: '/image1.jpg',
         title: 'T-Shirt',
         price: 130,
     },
     {
         id: 8,
-        image: '/public/images/image2.jpg',
+        image: '/image2.jpg',
         title: 'T-Shirt',
         price: 120,
     },

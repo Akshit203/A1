@@ -4,74 +4,62 @@ import Layout from "../components/layout/Layout";
 const productData = [
     {
         id: 1,
-        image: '/public/images/9c023e01-cf93-49e4-9e96-d1fc4d341b8b1644483275914NayoWomenOffWhitePrinted1.jpg',
+        image: '/image1.jpg',
         title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
         desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
         price: 150,
-        trendingProductName: 'Featured',
-        quantity: 1,
+        
     },
     {
         id: 2,
-        image: '/public/images/6fc8e78a-e0e3-4eb6-94f3-53449f5a8afc1717496220339-Kook-N-Keech-Women-Tshirts-4791717496219965-1.jpg',
+        image: '/image2.jpg',
         title: 'Cotton T-Shirt',
         desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
         price: 120,
-        trendingProductName: 'Featured',
-        quantity: 1,
+       
     }, 
     {
         id: 3,
-        image : '/public/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.jpg',
+        image: '/image3.jpg',
         title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
         desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
         price: 130,
-        trendingProductName: 'Featured',
-        quantity: 1,
+        
     },
     {
         id: 4,
-        image: '/public/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.jpg',
+        image: '/image4.jpg',
         title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
         desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
         price: 120,
-        trendingProductName: 'Featured',
-        quantity: 1,
+      
     },
     {
         id: 1,
-        image: '/public/images/828f1c75-c4de-4bc8-900a-aab184ea7e151721704393013StyleQuotientWomenCropShrug1.jpg',
+        image: '/image5.jpg',
         title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
         desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
         price: 150,
-        trendingProductName: 'Featured',
-        quantity: 1,
+        
     },
     {
         id: 2,
-        image: '/public/images/1UzPz8vx_a3edc785c1c14b16a607db09f4a11f83.jpg',
+        image: '/image6.jpg',
         title: 'Kaushalam kalash Copper Pot',
-        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
         price: 120,
-        trendingProductName: 'Featured',
-        quantity: 1,
+        
     },
     {
         id: 3,
-        image: '/public/images/1UzPz8vx_a3edc785c1c14b16a607db09f4a11f83.jpg',
+        image: '/image1.jpg',
         title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
-        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
         price: 130,
-        trendingProductName: 'Featured',
-        quantity: 1,
     },
     {
         id: 4,
-        image: '/public/images/1UzPz8vx_a3edc785c1c14b16a607db09f4a11f83.jpg',
+        image: '/image2.jpg',
         title: 'Hand Painted Blue Kaushalam Tea Pot in Aluminium',
-        desc: 'Shop Hand Painted Blue Kaushalam Tea Pot in Aluminium, handmade by Mrinalika Jain. Fair pricing. Ethically made. Positive impact.',
         price: 120,
-        trendingProductName: 'Featured',
         quantity: 1,
     }
 ]
