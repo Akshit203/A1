@@ -25,7 +25,7 @@ let Data = [
     },
     {
         id: 3,
-        image: '/public/images/f2.jpg',
+        image: '/f2.jpg',
         title: 'T-Shirt',
         price: 130,
  
