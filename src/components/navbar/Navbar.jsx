@@ -21,19 +21,19 @@ const Navbar = () => {
     }
 
     const navbar_list = (
-        <ul className="flex py-3 space-x-7 text-white font-medium text-xl px-5 pt-4 ">
+        <ul className="flex py-3 space-x-7 font-medium text-xl px-5 pt-4 ">
             <li className="border-b-2 bg-white text-black px-3 hover:border-blue-500 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
                 <Link to={'/'}>Home</Link>
             </li>
-            <li className=" border-b-2  text-black  px-3 hover:border-blue-500 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            <li className=" border-b-2 bg-white text-black  px-3 hover:border-blue-500 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
                 <Link to={'/Products'}>Products</Link>
             </li>
             {!user && (
                 <>
-                    <li className=" border-b-2  text-black  px-3 hover:transform hover:scale-105 hover:border-blue-500  transition-transform duration-300 ">
+                    <li className=" border-b-2  text-black bg-white px-3 hover:transform hover:scale-105 hover:border-blue-500  transition-transform duration-300 ">
                         <Link to={'/Register'}>Register</Link>
                     </li>
-                    <li className=" border-b-2 pb-1  text-black rounded-sm px-3 hover:transform hover:scale-105 hover:border-blue-500 transition-transform duration-300 ease-in-out">
+                    <li className=" border-b-2 pb-1 bg-white text-black rounded-sm px-3 hover:transform hover:scale-105 hover:border-blue-500 transition-transform duration-300 ease-in-out">
                         <Link to={'/Login'}>Log in</Link>
                     </li>
                 </>
@@ -50,7 +50,7 @@ const Navbar = () => {
             )}
             <li className="border-b-2 bg-white text-black rounded-sm px-3 hover:border-blue-500 hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
                 <Link to={'/cart'}>
-                    Cart({Products.length})
+                        Cart
                 </Link>
 
             </li>
@@ -58,7 +58,7 @@ const Navbar = () => {
     );
 
     return (
-        <nav className="bg-gray-100-50 sticky z-50 top-0 min-h-15 shadow-md">
+        <nav className="bg-gray-50 z-50 sticky  top-0 min-h-15 shadow-md fixed">
             <div className="lg:flex lg:justify-between items-center py-3 lg:px-3 ">
                 {/* Logo */}
                 <div className="left mt-2  lg:py-2">
@@ -67,13 +67,16 @@ const Navbar = () => {
                     </Link>
                 </div>
 
+
                 {/* NavBar List items */}
                 <div className="right flex justify-center mb-4 lg:mb-0 ">
                     {navbar_list}
                 </div>
 
+                <div> </div>
+
+
                 {/* Search Bar */}
-                <Search />
             </div>
         </nav>
     );

@@ -11,67 +11,55 @@ import { toast, Toaster } from 'react-hot-toast';
 let Data = [
     {
         id: 1,
-        image: '/public/images/image1.jpg',
+        image: 'https://i.pinimg.com/564x/3e/05/ce/3e05cefbc7eec79ac175ea8490a67939.jpg',
         title: 'T-Shirt',
         price: 150,
-        trendingProductName: 'Featured',
-        quantity: 1,
+       
     },
     {
         id: 2,
         image: '/public/images/image2.jpg',
         title: 'T-Shirt',
         price: 120,
-        trendingProductName: 'Featured',
-        quantity: 1,
+      
     },
     {
         id: 3,
-        image: '/src/static/images/image3.jpg',
+        image: '/public/images/image3.jpg',
         title: 'T-Shirt',
         price: 130,
-        trendingProductName: 'Featured',
-        quantity: 1,
+ 
     },
     {
         id: 4,
-        image: '/src/static/images/image4.jpg',
+        image: '/public/images/image4.jpg',
         title: 'T-Shirt',
         price: 120,
-        trendingProductName: 'Featured',
-        quantity: 1,
+
     },
     {
         id: 5,
-        image: '/src/static/images/9c023e01-cf93-49e4-9e96-d1fc4d341b8b1644483275914NayoWomenOffWhitePrinted1.jpg',
+        image: '/public/images/image5.jpg',
         title: 'T-Shirt',
         price: 150,
-        trendingProductName: 'Featured',
-        quantity: 1,
     },
     {
         id: 6,
-        image: '/src/static/images/6fc8e78a-e0e3-4eb6-94f3-53449f5a8afc1717496220339-Kook-N-Keech-Women-Tshirts-4791717496219965-1.jpg',
+        image: '/public/images/image6.jpg',
         title: 'T-Shirt',
         price: 120,
-        trendingProductName: 'Featured',
-        quantity: 1,
     },
     {
         id: 7,
-        image: '/src/static/images/11508911098449-HRX-by-Hrithik-Roshan-Men-Off-White-Solid-Sporty-Jacket-9701508911098165-1.jpg',
+        image: '/public/images/image1.jpg',
         title: 'T-Shirt',
         price: 130,
-        trendingProductName: 'Featured',
-        quantity: 1,
     },
     {
         id: 8,
-        image: '/src/static/images/8ebc0e0a-7d55-46ed-b7ea-79912f389e161701172271600-Levis-Slim-Fit-Checked-Pure-Cotton-Casual-Shirt-391701172271-1.jpg',
+        image: '/public/images/image2.jpg',
         title: 'T-Shirt',
         price: 120,
-        trendingProductName: 'Featured',
-        quantity: 1,
     },
 ];
 
@@ -94,7 +82,7 @@ const Card = () => {
 
     return (
         <div className="m-8">
-            <Toaster /> {/* Render the Toaster once at the top of your component */}
+            <Toaster /> 
             <section>
                 <div className="py-4">
                     <div className="">
