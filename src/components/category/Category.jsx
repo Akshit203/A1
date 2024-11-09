@@ -18,7 +18,7 @@ const list = [
     },
     {
         id: 4,
-        image: '/public/images/iphone.png',
+        image: '/public/static/images/iphone.png',
         name: 'Mobile'
     },
     {
