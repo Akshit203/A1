@@ -18,14 +18,14 @@ let Data = [
     },
     {
         id: 2,
-        image: '/public/images/image2.jpg',
+        image: 'https://i.pinimg.com/736x/e4/61/f2/e461f2246b6ad93e2099d98780626396.jpg',
         title: 'T-Shirt',
         price: 120,
       
     },
     {
         id: 3,
-        image: '/public/images/image3.jpg',
+        image: '/public/images/f2.jpg',
         title: 'T-Shirt',
         price: 130,
  
