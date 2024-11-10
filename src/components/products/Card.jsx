@@ -12,55 +12,167 @@ let Data = [
     {
         id: 1,
         image: '/image1.jpg',
-        title: 'T-Shirt',
-        price: 150,
-       
+        title: 'Cotton T-Shirt',
+        price: 999,
+        
     },
     {
         id: 2,
         image: '/image2.jpg',
-        title: 'T-Shirt',
-        price: 120,
-      
-    },
+        title: 'Cotton T-Shirt',
+        price: 499,
+       
+    }, 
     {
         id: 3,
         image: '/image3.jpg',
-        title: 'T-Shirt',
-        price: 130,
- 
+        title: 'Cotton T-Shirt',
+        price: 799,
+        
     },
     {
         id: 4,
         image: '/image4.jpg',
-        title: 'T-Shirt',
-        price: 120,
+        title: 'Cotton T-Shirt',
+        price: 299,
+      
+    },
+    {
+        id: 1,
+        image: '/image5.jpg',
+        title: 'Cotton T-Shirt',
+        price: 1099,
+        
+    },
+    {
+        id: 2,
+        image: '/image6.jpg',
+        title: 'Cotton T-Shirt',
+        price: 1599,
+        
+    },
+    {
+        id: 3,
+        image: '/image1.jpg',
+        title: 'Cotton T-Shirt',
+        price: 799,
+    },
+    {
+        id: 4,
+        image: '/image2.jpg',
+        title: 'Cotton T-Shirt',
+        price: 489,
+        quantity: 1,
+    },
+    {
+        id: 1,
+        image: '/image1.jpg',
+        title: 'Cotton T-Shirt',
+        price: 999,
+        
+    },
+    {
+        id: 2,
+        image: '/image2.jpg',
+        title: 'Cotton T-Shirt',
+        price: 499,
+       
+    }, 
+    {
+        id: 3,
+        image: '/image3.jpg',
+        title: 'Cotton T-Shirt',
+        price: 799,
+        
+    },
+    {
+        id: 4,
+        image: '/image4.jpg',
+        title: 'Cotton T-Shirt',
+        price: 299,
+      
+    },
+    {
+        id: 1,
+        image: '/image5.jpg',
+        title: 'Cotton T-Shirt',
+        price: 899,
 
     },
     {
-        id: 5,
-        image: '/image5.jpg',
-        title: 'T-Shirt',
-        price: 150,
-    },
-    {
-        id: 6,
+        id: 2,
         image: '/image6.jpg',
-        title: 'T-Shirt',
-        price: 120,
+        title: 'Cotton T-Shirt',
+        price: 1120,  
     },
     {
-        id: 7,
+        id: 3,
         image: '/image1.jpg',
-        title: 'T-Shirt',
-        price: 130,
+        title: 'Cotton T-Shirt',
+        price: 1199,
     },
     {
-        id: 8,
+        id: 4,
         image: '/image2.jpg',
-        title: 'T-Shirt',
-        price: 120,
+        title: 'Cotton T-Shirt',
+        price: 1920,
+        quantity: 1,
     },
+    {
+        id: 1,
+        image: '/image1.jpg',
+        title: 'Cotton T-Shirt',
+        price: 999,
+        
+    },
+    {
+        id: 2,
+        image: '/image2.jpg',
+        title: 'Cotton T-Shirt',
+        price: 499,
+       
+    }, 
+    {
+        id: 3,
+        image: '/image3.jpg',
+        title: 'Cotton T-Shirt',
+        price: 799,
+        
+    },
+    {
+        id: 4,
+        image: '/image4.jpg',
+        title: 'Cotton T-Shirt',
+        price: 299,
+      
+    },
+    {
+        id: 1,
+        image: '/image5.jpg',
+        title: 'Cotton T-Shirt',
+        price: 1599,
+        
+    },
+    {
+        id: 2,
+        image: '/image6.jpg',
+        title: 'Cotton T-Shirt',
+        price: 1120,
+        
+    },
+    {
+        id: 3,
+        image: '/image1.jpg',
+        title: 'Cotton T-Shirt',
+        price: 677,
+    },
+    {
+        id: 4,
+        image: '/image2.jpg',
+        title: 'Cotton T-Shirt',
+        price: 1120,
+    }
+  
 ];
 
 

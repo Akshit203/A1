@@ -18,7 +18,7 @@ const list = [
     },
     {
         id: 4,
-        image: '/src/static/images/iphone.png',
+        image: '/iphone.png',
         name: 'Mobile'
     },
     {
@@ -26,53 +26,42 @@ const list = [
         image: 'https://cdn-icons-png.flaticon.com/256/12142/12142416.png',
         name: 'Laptop'
     },
+
     {
         id: 6,
-        image: 'https://cdn-icons-png.flaticon.com/256/10686/10686553.png',
-        name: 'Shoes'
-    },
-    {
-        id: 7,
         image: 'https://cdn-icons-png.flaticon.com/256/12114/12114279.png',
         name: 'Home'
     },
-    {
-        id: 8,
-        image: 'https://cdn-icons-png.flaticon.com/256/11946/11946316.png',
-        name: 'Books'
-    }
-]
+  
+];
 
 const Category = () => {
     return (
         <div>
             <div className="flex flex-col mt-5">
-
-                <div className="flex  lg:justify-center hide-scroll-bar">
-
-                    <div className="flex">
-
-                        {list.map((list) => {
-
-                            return (
-                                <div key={list.id} className="px-3 lg:px-10 border-2 m-5 p-4 rounded-md 
-                                hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
-
-                                    <div className=" lg:w-24 lg:h-20 max-w-16">
-                                        <div className="flex justify-center mb-10 
-                                        hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
-                                            <img src={list.image} alt={list.name} />
-                                        </div>
-                                    </div>
-                                    <h1 className='text-sm lg:text-base text-center font-medium'>{list.name}</h1>
+                <div className="flex lg:justify-center overflow-x-auto hide-scroll-bar">
+                    <div className="flex flex-wrap justify-center md:justify-start">
+                        {list.map((item) => (
+                            <div 
+                                key={item.id} 
+                                className="px-3 py-4 m-3 border-2 rounded-md transition-transform duration-300 ease-in-out hover:scale-105 
+                                w-24 sm:w-28 md:w-32 lg:w-36"
+                            >
+                                <div className="flex justify-center mb-3">
+                                    <img 
+                                        src={item.image} 
+                                        alt={item.name} 
+                                        className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+                                    />
                                 </div>
-                            )
-                        })}
+                                <h1 className="text-xs sm:text-sm md:text-base text-center font-medium">{item.name}</h1>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
         </div>
     );
-}
+};
 
 export default Category;
