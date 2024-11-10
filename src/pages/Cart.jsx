@@ -1,53 +1,8 @@
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { deleteFromCart, incrementQuantity, decrementQuantity } from '../redux/cartSlice'; // Adjust paths as needed
 import Layout from '../components/layout/Layout';
-import { Trash } from 'lucide-react'
-import { useDispatch, useSelector } from "react-redux";
-import { decrementQuantity, deleteFromCart, incrementQuantity } from "../redux/cartSlice";
-import toast from "react-hot-toast";
-import { useEffect } from 'react';
-
-const products = [
-    {
-        id: 1,
-        name: 'Nike Air Force 1 07 LV8',
-        href: '#',
-        price: '₹47,199',
-        originalPrice: '₹48,900',
-        discount: '5% Off',
-        color: 'Orange',
-        size: '8 UK',
-        imageSrc:
-            'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/54a510de-a406-41b2-8d62-7f8c587c9a7e/air-force-1-07-lv8-shoes-9KwrSk.png',
-    },
-    {
-        id: 2,
-        name: 'Nike Blazer Low 77 SE',
-        href: '#',
-        price: '₹1,549',
-        originalPrice: '₹2,499',
-        discount: '38% off',
-        color: 'White',
-        leadTime: '3-4 weeks',
-        size: '8 UK',
-        imageSrc:
-            'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e48d6035-bd8a-4747-9fa1-04ea596bb074/blazer-low-77-se-shoes-0w2HHV.png',
-    },
-    {
-        id: 3,
-        name: 'Nike Air Max 90',
-        href: '#',
-        price: '₹2219 ',
-        originalPrice: '₹999',
-        discount: '78% off',
-        color: 'Black',
-        imageSrc:
-            'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fd17b420-b388-4c8a-aaaa-e0a98ddf175f/dunk-high-retro-shoe-DdRmMZ.png',
-    },
-    
-]
-
-
-
-
+import { toast } from 'react-toastify';
 
 const Cart = () => {
     const cartItems = useSelector((state) => state.cart);
@@ -66,8 +21,11 @@ const Cart = () => {
         dispatch(decrementQuantity(id));
     };
 
+    // Calculate total quantity and total amount
     const cartItemTotal = cartItems.reduce((total, item) => total + item.quantity, 0);
-    const cartTotal = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2);
+    const cartTotal = cartItems.reduce((total, item) => {
+        return total + (parseFloat(item.price) * item.quantity); 
+    }, 0).toFixed(2); // Round to two decimal places
 
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cartItems));
@@ -98,7 +56,7 @@ const Cart = () => {
                                                             <p className="text-sm text-gray-500">{category}</p>
                                                         </div>
                                                         <div className="mt-1 flex items-end">
-                                                            <p className="text-sm font-medium text-gray-900">₹{price}</p>
+                                                            <p className="text-sm font-medium text-gray-900">₹{parseFloat(price).toFixed(2)}</p> {/* Ensure price is shown correctly */}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -113,11 +71,10 @@ const Cart = () => {
                                                         readOnly
                                                     />
                                                     <button onClick={() => handleIncrement(id)} type="button" className="h-7 w-7">
-                                                        + {/* Increment Button */}
+                                                        + 
                                                     </button>
-                                                    <button onClick={() => deleteCart(item)} type="button" className="ml-6 flex items-center">
-                                                        <Trash size={12} className="text-pink-500" />
-                                                        <span className="text-xs font-medium text-pink-500">Remove</span>
+                                                    <button onClick={() => deleteCart(item)} type="button" className="ml-6 text-pink-500 text-xs font-medium">
+                                                        Remove 
                                                     </button>
                                                 </div>
                                             </li>
@@ -128,6 +85,7 @@ const Cart = () => {
                                 )}
                             </ul>
                         </section>
+
                         {/* Order summary */}
                         <section
                             aria-labelledby="summary-heading"
@@ -143,7 +101,7 @@ const Cart = () => {
                                 <dl className="space-y-1 px-2 py-4">
                                     <div className="flex items-center justify-between">
                                         <dt className="text-sm text-gray-800">Price ({cartItemTotal} item{cartItemTotal > 1 ? 's' : ''})</dt>
-                                        <dd className="text-sm font-medium text-gray-900">₹ {cartTotal}</dd>
+                                        <dd className="text-sm font-medium text-gray-900">₹ {cartTotal}</dd> {/* Show correct total */}
                                     </div>
                                     <div className="flex items-center justify-between py-4">
                                         <dt className="flex text-sm text-gray-800">Delivery Charges</dt>
@@ -151,29 +109,29 @@ const Cart = () => {
                                     </div>
                                     <div className="flex items-center justify-between border-y border-dashed py-4">
                                         <dt className="text-base font-medium text-gray-900">Total Amount</dt>
-                                        <dd className="text-base font-medium text-gray-900">₹ {cartTotal}</dd>
+                                        <dd className="text-base font-medium text-gray-900">₹ {cartTotal}</dd> {/* Show correct total */}
                                     </div>
                                 </dl>
                                 <div className="px-2 pb-4 font-medium">
                                     <div className="flex gap-4 mb-6">
-                                    <button
-                                        onClick={() => {
-                                            if (cartItems.length === 0) {
-                                                toast.error("Your cart is empty. Please add items to your cart before placing an order.", {
-                                                    position: toast.POSITION.TOP_CENTER,
-                                                    autoClose: 3000,
-                                                });
-                                            } else {
-                                                toast.success("Order placed successfully!", {
-                                                    position: toast.POSITION.TOP_CENTER,
-                                                    autoClose: 3000,
-                                                });
-                                            }
-                                        }}
-                                        className="w-full px-4 py-3 text-center text-gray-100 bg-black border border-transparent rounded-xl"
+                                        <button
+                                            onClick={() => {
+                                                if (cartItems.length === 0) {
+                                                    toast.error("Your cart is empty. Please add items to your cart before placing an order.", {
+                                                        position: toast.POSITION.TOP_CENTER,
+                                                        autoClose: 3000,
+                                                    });
+                                                } else {
+                                                    toast.success("Order placed successfully!", {
+                                                        position: toast.POSITION.TOP_CENTER,
+                                                        autoClose: 3000,
+                                                    });
+                                                }
+                                            }}
+                                            className="w-full px-4 py-3 text-center text-gray-100 bg-black border border-transparent rounded-xl"
                                         >
                                           Place Order
-                                    </button>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -186,5 +144,3 @@ const Cart = () => {
 };
 
 export default Cart;
-
-

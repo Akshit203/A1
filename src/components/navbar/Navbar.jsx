@@ -51,15 +51,16 @@ const Navbar = () => {
     return (
         <nav className="bg-gray-50 w-full sticky top-0 shadow-md">
             <div className="flex flex-col items-center py-3 px-5 lg:px-8">
-                {/* Logo Centered on First Row */}
+                
+                {/* Logo Centered on the First Row */}
                 <div className="w-full text-center mb-2">
                     <Link to={'/'}>
-                        <h2 className="font-bold text-black text-2xl sm:text-3xl lg:text-4xl">A1 Store</h2>
+                        <h2 className="font-bold text-black text-3xl lg:text-4xl">A1 Store</h2>
                     </Link>
                 </div>
 
-                {/* Navbar Links on Second Row */}
-                <div className="w-full flex justify-center">
+                {/* Navbar Links in a Row on Larger Screens, Wraps on Smaller Screens */}
+                <div className="w-full flex flex-wrap justify-center">
                     {navbar_list}
                 </div>
             </div>
